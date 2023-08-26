@@ -3,8 +3,7 @@ local util = require "mocegui.luatils"
 
 function main()
 	mocegui.load()
-    mocegui.font[1] = rl.LoadFontEx("data/font/Cascadia.ttf", 12, nil, 0)
-
+    
     local counter = 0
     local defwin = mocegui.newWindow(nil,{x=(600/2)-144,y=48},{x=288,y=94}) -- default window
     defwin.text.new('Right mouse button close windows.\nMiddle mouse button move windows.\nLeft mouse button interacts, and also move\nwindows if click on title bar.\nWhen a window got title bar it also got a close\nbutton on top12-right',{x=4,y=4})
